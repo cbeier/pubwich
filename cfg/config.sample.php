@@ -56,8 +56,8 @@
 			array(
 
 				array( 'Text', 'intro', array(
-						'title' => 'Introduction',
-						'text' => 'This is a short introduction text. To hide the "Introduction" title, all you have to is not specify a "title" item for the <strong>Text</strong> box.',
+						'title' => 'News <span>updates that matter</span>',
+						'text' => ((file_get_contents("./inc/update.txt")) ? file_get_contents("./inc/update.txt") : "No updates currently available."),
 					)
 				),
 
@@ -107,6 +107,16 @@
 						'total' => 10,
 						'title' => 'Twitter',
 						'description' => 'latest statuses'
+					)
+				),
+
+				array( 'WoWArmory', 'armory', array(
+						'character' => 'YOUR_WOW_CHARACTER_NAME',
+						'realm' => 'REALM_CHARACTER_IS_ON',
+						'locale' => 'en_US',
+						'total' => 5,
+						'title' => 'WoWArmory',
+						'description' => 'recent activity'
 					)
 				),
 
