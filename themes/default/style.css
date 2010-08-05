@@ -247,6 +247,32 @@ h1 a:hover {
 }
 
 /**
+ *	WoWArmory
+ ******************************************************************/
+
+#armory h2 a {
+	color: #ebad04;	
+}
+
+#armory li {
+	display: block;
+	padding: 6px;
+}
+
+#armory li span.datename {
+	display: block;
+	float: left;
+	text-align: center;
+	width: 95px;
+	margin-right: 12px;
+}
+
+#armory li span.datename a {
+	text-decoration: none;
+	border: none;
+}
+
+/**
  *	Last.fm
  ******************************************************************/
 
