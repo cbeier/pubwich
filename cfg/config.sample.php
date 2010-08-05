@@ -7,9 +7,9 @@
 	// error_reporting(0); // uncomment this line in production environment (prevent errors from showing up)
 
 	// Localisation
-	date_default_timezone_set( 'America/Montreal' );
+	date_default_timezone_set( 'America/Detriot' );
 	define('PUBWICH_LANG', ''); // leave to '' to keep Pubwich in english
-	setlocale( LC_ALL, 'en_CA.UTF8' ); // for date methods
+	setlocale( LC_ALL, 'en_US.UTF8' ); // for date methods
 
 	// General site informations
 	define('PUBWICH_URL', 'http://localhost/pubwich/');
