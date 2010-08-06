@@ -22,32 +22,6 @@ Change the permissions on the cache directory to make it writeable for all (`chm
 
 Everything should be working now (when browsing to your server!).
 
-## Upgrading to Pubwich 1.4
-
-There are a few things that you’ll need to consider when upgrading to Pubwich 1.4; Notably, Twitter OAuth support and a new templating language.
-
-### Twitter & OAuth
-
-Before Pubwich 1.4, you needed to enter your Twitter username and password in order to make request to its API. This is called “*Basic Authentication*”. But since Twitter [dropped support](http://www.countdowntooauth.com/) for this kind of authentication in june 2010, Pubwich doesn’t support it anymore. A [small tutorial](http://pubwich.org/wiki/Using_Twitter_with_Pubwich) is available to show you how to create a Twitter application, get OAuth application keys and access tokens.
-
-After you are done configuring Pubwich 1.4 to work with Twitter, you can remove your Twitter `username` and `password` parameters from your configuration file.
-
-### Custom item templates in your theme
-
-Every theme has a `functions.php` file that contains at least the basic template for what Pubwich calls a “*box*”. Along with that `boxTemplate` function, you can define other templates, such as how an item is rendered for a specific service. Before Pubwich 1.4, you could use this template syntax:
-
-    function Atom_myblog_itemTemplate() {
-      return '<li><a href="{%url%}">{%title%}</a> - {%content%}</li>'."\n";
-    }
-
-But now, with the new Mustache.php template engine, you have to use this syntax:
-
-    function Atom_myblog_itemTemplate() {
-      return '<li><a href="{{{url}}}">{{{title}}}</a> - {{{content}}}</li>'."\n";
-    }
-
-So, basically, instead of `{%variable%}`, you have to use `{{{variable}}}`. The new template engine allows us to use conditionnals, loops and other kinds of cool stuff.
-
 ## Service configuration
 
 In Pubwich’s `config.php` file, a service looks like this:
@@ -115,7 +89,7 @@ These parameters can be used for all services:
 
 * `tags` → The tags as an `array()` or a string with comma separated values.
 
-### GitHub
+### Github
 
 * `username` → The GitHub username
 * `method` → Either `GithubRecentActivity`, `GithubRepositories` and `GithubGists`
@@ -136,6 +110,10 @@ These parameters can be used for all services:
 
 * `userid` → The Goodreads user ID.
 * `size` → The size for each book cover.
+
+### Google Buzz
+
+* `username` → Your Google Buzz username.
 
 ### Gowalla
 
@@ -251,6 +229,10 @@ These parameters can be used for all services:
 
 * `terms` → The search query.
 
+### Updates
+
+* Basic `title` and `description` options apply.
+
 ### Vimeo
 
 * `username` → The Vimeo username.
@@ -258,6 +240,11 @@ These parameters can be used for all services:
 ### YouTube
 
 * `username` → The YouTube username.
+
+### WoWArmory
+
+* `character` → Your WoW character name.
+* `realm` → The realm your character is on.
 
 ## Custom templates
 
