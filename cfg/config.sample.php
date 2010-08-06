@@ -55,9 +55,15 @@
 		array(
 			array(
 
+				array( 'Updates', 'updates', array(
+						'title' => 'News',
+						'description' => 'updates that matter',
+					)
+				),
+
 				array( 'Text', 'intro', array(
-						'title' => 'News <span>updates that matter</span>',
-						'text' => ((file_get_contents("./inc/update.txt")) ? file_get_contents("./inc/update.txt") : "No updates currently available."),
+						'title' => 'Introduction',
+						'text' => 'This is a short introduction text. To hide the "Introduction" title, all you have to is not specify a "title" item for the <strong>Text</strong> box.',
 					)
 				),
 
