@@ -2,10 +2,11 @@
 	defined('PUBWICH') or die('No direct access allowed.');
 
 	/**
-	 * @classname Delicious
+	 * @classname Buzz
 	 * @description Fetch your google buzz filtering out any buzzes imported from other services
-	 * @version 1.0 (20100421)
+	 * @version 1.1 (20100804)
 	 * @author Gareth Simpson (xurble.org)
+	 * @modifiedby Patrick Weaver (painswitch.com)
 	 * @methods None
 	 */
 
@@ -17,7 +18,7 @@
 			$config['url'] = 'http://buzz.googleapis.com/feeds/'.$config['username'].'/public/posted';
  			
 			parent::__construct( $config );
-			$this->setItemTemplate('<li><div>{%content%}</div><div style="text-align:right"><small><a href="{%link%}"> {%date%}</a></small></div></li>'."\n");
+			$this->setItemTemplate('<li><div>{{{content}}}</div><div style="text-align:right"><small><a href="{{{link}}}"> {{{date}}}</a></small></div></li>'."\n");
 		}
 		
 		/**
