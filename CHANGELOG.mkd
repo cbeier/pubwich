@@ -1,7 +1,14 @@
 Pubwich’s changelog
 ===================
 
-Pubwich 1.6 (?)
+septor's Pubwich 1.LOL (?)
+
+* Added WoWArmory service.
+* Added Updates service.
+* `/inc/` direcory added to house `update.txt` file. More will be added to this directory soon.
+* Added Google Buzz service.
+
+Pubwich 1.6 (FORKED)
 -------------------------------------------------
 * Added StatusNet service.
 * Added SlideShare service.
