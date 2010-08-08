@@ -55,6 +55,11 @@ These parameters can be used for all services:
 
 * `username` → The Delicious.com username.
 
+### Digg
+
+* `username` → The Digg.com username.
+* `method` → Either `Diggs`, `Submissions`, `History`, or `Favorites`
+
 ### Dribbble
 
 * `username` → The Dribbble username.

@@ -184,6 +184,15 @@
 						'description' => 'weekly top albums',
 					) 
 				),
+
+				array( 'Digg', 'digg', array( 
+						'method' => 'Diggs',
+						'username' => 'DIGG_USERNAME_HERE',
+						'total' => 5,
+						'title' => 'Digg',
+						'description' => 'dugg \'em',
+					)
+				),
 			),
 
 		)
