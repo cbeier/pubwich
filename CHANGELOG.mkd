@@ -4,9 +4,10 @@ Pubwich’s changelog
 septor's Pubwich 1.LOL (?)
 -------------------------------------------------
 * Added WoWArmory service.
-* Added Updates service.
-* `/inc/` direcory added to house `update.txt` file. More will be added to this directory soon.
 * Added Google Buzz service.
+* Added Digg service.
+* Added Updates service.
+`/inc/` directory added to house `update.txt` file. More will be added to this directory soon.
 
 Pubwich 1.6 (FORKED)
 -------------------------------------------------
