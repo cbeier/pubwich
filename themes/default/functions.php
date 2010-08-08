@@ -24,6 +24,17 @@
 	';
 	}
 
+	function Updates_boxTemplate() {
+		return '
+			<div class="boite {{{class}}}" id="{{{id}}}">
+				<h2>{{{title}}} <span>{{{description}}}</span></h2>
+				<div class="boite-inner">
+					{{{items}}}
+				</div>
+			</div>
+	';
+	}
+
 	/****************************************************
 	 *
 	 * Maybe these will be useful...
@@ -55,6 +66,14 @@
 
 	function Youtube_itemTemplate() {
 		return '<li class="clearfix"><a href="{{link}}"><img width="{{{size}}}" src="{{{image}}}" alt="{{{title}}}" /><strong>{{{title}}}</strong> <span>{{{description}}}</span></a></li>'."\n";
+	}
+
+	function Buzz_itemTemplate() {
+		return '<li><div>{{{content}}}</div><div style="text-align:right"><small><a href="{{{link}}}"> {{{date}}}</a></small></div></li>'."\n";
+	}
+
+	function WoWArmory_itemTemplate() {
+		return '<li class="clearfix"><span class="datename"><a href="{{{link}}}">{{{character}}}</a><br />{{{date}}}</span>{{{content}}}</li>'."\n";
 	}
 
 	function Flickr_boxTemplate() {
