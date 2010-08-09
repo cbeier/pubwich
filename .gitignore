@@ -5,3 +5,5 @@ logs/*.log
 themes/user
 themes/default/lib/Services/*.php
 favicon.*
+themes/painswitch
+inc/*.txt
