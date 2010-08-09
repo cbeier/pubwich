@@ -58,7 +58,7 @@ These parameters can be used for all services:
 ### Digg
 
 * `username` → The Digg.com username.
-* `method` → Either `Diggs`, `Submissions`, `History`, or `Favorites`
+* `method` → Either `Diggs`, `Submissions`, `History`, `Favorites`
 
 ### Dribbble
 
@@ -143,7 +143,7 @@ These parameters can be used for all services:
 
 * `username` → The Last.fm username.
 * `key` → The Last.fm API key.
-* `method` → Either `LastFMRecentTracks`, `LastFMWeeklyAlbums`, `LastFMTopAlbums`
+* `method` → Either `LastFMRecentTracks`, `LastFMWeeklyAlbums`, `LastFMWeeklyTracks`, `LastFMTopAlbums`
 
 #### LastFMRecentTracks
 
