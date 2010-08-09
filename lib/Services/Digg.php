@@ -60,7 +60,7 @@
 						'link' => htmlspecialchars( $item->link ),
 						'title' => $item->title,
 						'description' => $item->description,
-						'date' => $item->pubDate,
+						'date' => Pubwich::time_since( $item->pubDate ),
 						'author' => $item->author,
 						);
 		}
@@ -94,7 +94,7 @@
 						'link' => htmlspecialchars( $item->link ),
 						'title' => $item->title,
 						'description' => $item->description,
-						'date' => $item->pubDate,
+						'date' => Pubwich::time_since( $item->pubDate ),
 						'author' => $item->author,
 						);
 		}
@@ -128,7 +128,7 @@
 						'link' => htmlspecialchars( $item->link ),
 						'title' => $item->title,
 						'description' => $item->description,
-						'date' => $item->pubDate,
+						'date' => Pubwich::time_since( $item->pubDate ),
 						'author' => $item->author,
 						);
 		}
@@ -162,7 +162,7 @@
 						'link' => htmlspecialchars( $item->link ),
 						'title' => $item->title,
 						'description' => $item->description,
-						'date' => $item->pubDate,
+						'date' => Pubwich::time_since( $item->pubDate ),
 						'author' => $item->author,
 						);
 		}
