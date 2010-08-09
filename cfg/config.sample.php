@@ -3,8 +3,8 @@
 
 	// Rename this file to config.php
 
-	error_reporting(E_ALL ^ E_NOTICE); // uncomment this line in development environment
-	// error_reporting(0); // uncomment this line in production environment (prevent errors from showing up)
+	//error_reporting(E_ALL ^ E_NOTICE); // uncomment this line in development environment
+	 error_reporting(0); // uncomment this line in production environment (prevent errors from showing up)
 
 	// Localisation
 	date_default_timezone_set( 'America/Detriot' );
