@@ -1,0 +1,11 @@
+septor's Pubwich -- Future Plans
+===================
+
+Upcoming Changes
+-------------------------------------------------
+* User Authentication - Will be used for the below and possibly more.
+* Block Interaction Boxes - Want to post a tweet from your site? Update the Updates block quickly? This will allow it.
+
+Distant "In Planning" Changes
+-------------------------------------------------
+* Theme system expansions.
