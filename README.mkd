@@ -58,7 +58,7 @@ These parameters can be used for all services:
 ### Digg
 
 * `username` → The Digg.com username.
-* `method` → Either `Diggs`, `Submissions`, `History`, `Favorites`
+* `method` → Either `Diggs` or `Submissions`
 
 ### Dribbble
 
