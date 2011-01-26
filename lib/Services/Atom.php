@@ -4,15 +4,18 @@
 	/**
 	 * @classname Atom
 	 * @description Fetch Atom feeds
-	 * @version 1.2 (20100804)
+	 * @version 1.1 (20090929)
 	 * @author Rémi Prévost (exomel.com)
 	 * @methods None
 	 */
 
 	class Atom extends Service {
 
+		private $dateFormat;
+
 		public function __construct( $config ){
 			$this->total = $config['total'];
+			$this->dateFormat = $config['date_format'];
 			$this->setURL( $config['url'] );
 			$this->setHeaderLink( array( 'url' => $config['url'], 'type' => 'application/atom+xml' ) );
 			$this->setItemTemplate('<li><a href="{{link}}">{{{title}}}</a> {{{date}}}</li>'."\n");
@@ -37,7 +40,8 @@
 			return array(
 						'link' => htmlspecialchars( $link ),
 						'title' => trim( $item->title ),
-						'date' => ( $date ),
+						'date' => Pubwich::time_since( $date ),
+						'absolute_date' => date($this->dateFormat, strtotime($date)),
 						'content' => $item->content,
 			);
 		}
